@@ -1,18 +1,735 @@
-<!doctype html>
-<html>
-<head>
-  <title>WEB1 - Welcome</title>
-  <meta charset="utf-8">
-</head>
-<body>
-  <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <h2>WEB</h2>
-  <p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
-  </p>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+		<meta name="generator" content="Hugo 0.80.0" />
+		<title>수왕간판</title>
+
+		<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/" />
+
+		<!-- Bootstrap core CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+			crossorigin="anonymous"
+		/>
+		<!-- Favicons -->
+		<link
+			rel="apple-touch-icon"
+			href="/docs/5.0/assets/img/favicons/apple-touch-icon.png"
+			sizes="180x180"
+		/>
+		<link
+			rel="icon"
+			href="/docs/5.0/assets/img/favicons/favicon-32x32.png"
+			sizes="32x32"
+			type="image/png"
+		/>
+		<link
+			rel="icon"
+			href="/docs/5.0/assets/img/favicons/favicon-16x16.png"
+			sizes="16x16"
+			type="image/png"
+		/>
+		<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json" />
+		<link
+			rel="mask-icon"
+			href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg"
+			color="#7952b3"
+		/>
+		<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico" />
+		<meta name="theme-color" content="#7952b3" />
+
+		<link href="CSS/style.css" rel="stylesheet" />
+
+		<!-- Custom styles for this template -->
+		<link href="CSS/carousel.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand text-info" href="#">수왕간판</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarsExampleDefault"
+						aria-controls="navbarsExampleDefault"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+						<ul class="navbar-nav me-auto mb-2 mb-md-0">
+							<!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li> -->
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle active"
+									href="#"
+									id="dropdown01"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>회사소개</a
+								>
+								<ul class="dropdown-menu" aria-labelledby="dropdown01">
+									<li><a class="dropdown-item" href="#">대표인삿말</a></li>
+									<li><a class="dropdown-item" href="#">과정</a></li>
+									<li><a class="dropdown-item" href="#">직원</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle active"
+									href="#"
+									id="dropdown01"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>간판</a
+								>
+								<ul class="dropdown-menu" aria-labelledby="dropdown01">
+									<li><a class="dropdown-item" href="#">간판</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle active"
+									href="#"
+									id="dropdown01"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>문의</a
+								>
+								<ul class="dropdown-menu" aria-labelledby="dropdown01">
+									<li><a class="dropdown-item" href="#">상담</a></li>
+									<li><a class="dropdown-item" href="#">오시는길</a></li>
+								</ul>
+							</li>
+						</ul>
+						<span class="border border-info text-warning p-3">t.010-2955-8898</span>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#myCarousel"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#myCarousel"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#myCarousel"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<svg
+							class="bd-placeholder-img"
+							width="100%"
+							height="100%"
+							xmlns="http://www.w3.org/2000/svg"
+							aria-hidden="true"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false"
+						>
+							<rect width="100%" height="100%" fill="#777" />
+						</svg>
+
+						<div class="container">
+							<div class="carousel-caption text-start">
+								<h1>간판 제작</h1>
+								<p>최신 기술 기반으로 최선을 다해 만듭니다.</p>
+								<p><a class="btn btn-lg btn-primary" href="#">대표인삿말</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<svg
+							class="bd-placeholder-img"
+							width="100%"
+							height="100%"
+							xmlns="http://www.w3.org/2000/svg"
+							aria-hidden="true"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false"
+						>
+							<rect width="100%" height="100%" fill="#777" />
+						</svg>
+
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>간판</h1>
+								<p>다른 간판회사와 다르게 매력적인 간판</p>
+								<p><a class="btn btn-lg btn-primary" href="#">간판</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<svg
+							class="bd-placeholder-img"
+							width="100%"
+							height="100%"
+							xmlns="http://www.w3.org/2000/svg"
+							aria-hidden="true"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false"
+						>
+							<rect width="100%" height="100%" fill="#777" />
+						</svg>
+
+						<div class="container">
+							<div class="carousel-caption text-end">
+								<h1>쉬운 상담</h1>
+								<p>언제든 쉬운 상담으로 편하게 상담하실수 있습니다.</p>
+								<p><a class="btn btn-lg btn-primary" href="#">상담</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#myCarousel"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#myCarousel"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- Marketing messaging and featurettes
+  ================================================== -->
+			<!-- Wrap the rest of the page in another container to center all the content. -->
+			<div class="row mb-2" id="greetings">
+				<div class="col-md-6">
+					<div
+						class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+					>
+						<div class="col p-4 d-flex flex-column position-static">
+							<strong class="d-inline-block mb-2 text-primary">World</strong>
+							<h3 class="mb-0">Featured post</h3>
+							<div class="mb-1 text-muted">Nov 12</div>
+							<p class="card-text mb-auto">
+								This is a wider card with supporting text below as a natural lead-in
+								to additional content.
+							</p>
+							<a href="#" class="stretched-link">Continue reading</a>
+						</div>
+						<div class="col-auto d-none d-lg-block">
+							<svg
+								class="bd-placeholder-img"
+								width="200"
+								height="250"
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								aria-label="Placeholder: Thumbnail"
+								preserveAspectRatio="xMidYMid slice"
+								focusable="false"
+							>
+								<title>Placeholder</title>
+								<rect width="100%" height="100%" fill="#55595c" />
+								<text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container" id="process">
+				<div class="page-header">
+					<h1 id="timeline">과정</h1>
+				</div>
+				<ul class="timeline">
+					<li>
+						<div class="timeline-badge"><i class="glyphicon glyphicon-repeat"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">작업을 받습니다</h4>
+								<p>
+									<small class="text-muted"
+										><i class="glyphicon glyphicon-time"></i> 겁나빠르게</small
+									>
+								</p>
+							</div>
+							<div class="timeline-body">
+								<p>
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge warning">
+							<i class="glyphicon glyphicon-credit-card"></i>
+						</div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">간판을 만듭니다</h4>
+							</div>
+							<div class="timeline-body">
+								<p>
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="timeline-badge danger">
+							<i class="glyphicon glyphicon-credit-card"></i>
+						</div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">간판을 처리합니다</h4>
+							</div>
+							<div class="timeline-body">
+								<p>
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">간판을 줍니다</h4>
+							</div>
+							<div class="timeline-body">
+								<p>
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+								</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="timeline-badge info">
+							<i class="glyphicon glyphicon-floppy-disk"></i>
+						</div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">완성~~~</h4>
+							</div>
+							<div class="timeline-body">
+								<p>
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+								</p>
+								<hr />
+								<!-- <div class="btn-group">
+									<button
+										type="button"
+										class="btn btn-primary btn-sm dropdown-toggle"
+										data-toggle="dropdown"
+									>
+										<i class="glyphicon glyphicon-cog"></i>
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+									</ul>
+								</div> -->
+							</div>
+						</div>
+					</li>
+					<li>
+						<!-- <div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">알아서 추가해라 빼도되고</h4>
+							</div>
+							<div class="timeline-body">
+								<p>
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 
+								</p>
+							</div>
+						</div> -->
+					</li>
+					<li class="timeline-inverted">
+						<div class="timeline-badge success">
+							<i class="glyphicon glyphicon-thumbs-up"></i>
+						</div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">뭘 적어야되냐</h4>
+							</div>
+							<div class="timeline-body">
+								<p>
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+									신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현
+									못생김 신국현 못생김 신국현 못생김 신국현 못생김 신국현 못생김
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="container marketing">
+				<!-- Three columns of text below the carousel -->
+				<h2 class="display-3 text-info">직원</h2>
+				<div class="row">
+					<div class="col-lg-4">
+						<svg
+							class="bd-placeholder-img rounded-circle"
+							width="140"
+							height="140"
+							xmlns="http://www.w3.org/2000/svg"
+							role="img"
+							aria-label="Placeholder: 140x140"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false"
+						>
+							<title>Placeholder</title>
+							<rect width="100%" height="100%" fill="#777" />
+							<text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+						</svg>
+
+						<h2>Heading</h2>
+						<p>
+							Some representative placeholder content for the three columns of text
+							below the carousel. This is the first column.
+						</p>
+						<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+					</div>
+					<!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<svg
+							class="bd-placeholder-img rounded-circle"
+							width="140"
+							height="140"
+							xmlns="http://www.w3.org/2000/svg"
+							role="img"
+							aria-label="Placeholder: 140x140"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false"
+						>
+							<title>Placeholder</title>
+							<rect width="100%" height="100%" fill="#777" />
+							<text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+						</svg>
+
+						<h2>Heading</h2>
+						<p>
+							Another exciting bit of representative placeholder content. This time,
+							we've moved on to the second column.
+						</p>
+						<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+					</div>
+					<!-- /.col-lg-4 -->
+					<div class="col-lg-4">
+						<svg
+							class="bd-placeholder-img rounded-circle"
+							width="140"
+							height="140"
+							xmlns="http://www.w3.org/2000/svg"
+							role="img"
+							aria-label="Placeholder: 140x140"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false"
+						>
+							<title>Placeholder</title>
+							<rect width="100%" height="100%" fill="#777" />
+							<text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+						</svg>
+
+						<h2>Heading</h2>
+						<p>
+							And lastly this, the third column of representative placeholder content.
+						</p>
+						<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+					</div>
+					<!-- /.col-lg-4 -->
+				</div>
+				<!-- /.row -->
+
+				<!-- START THE FEATURETTES -->
+
+				<hr class="featurette-divider" />
+
+				<div class="row featurette">
+					<div class="col-md-7">
+						<h2 class="featurette-heading">
+							First featurette heading.
+							<span class="text-muted">It’ll blow your mind.</span>
+						</h2>
+						<p class="lead">
+							Some great placeholder content for the first featurette here. Imagine
+							some exciting prose here.
+						</p>
+					</div>
+					<div class="col-md-5">
+						<svg
+							class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+							width="500"
+							height="500"
+							xmlns="http://www.w3.org/2000/svg"
+							role="img"
+							aria-label="Placeholder: 500x500"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false"
+						>
+							<title>Placeholder</title>
+							<rect width="100%" height="100%" fill="#eee" />
+							<text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+						</svg>
+					</div>
+				</div>
+
+				<hr class="featurette-divider" />
+
+				<div class="row featurette">
+					<div class="col-md-7 order-md-2">
+						<h2 class="featurette-heading">
+							Oh yeah, it’s that good.
+							<span class="text-muted">See for yourself.</span>
+						</h2>
+						<p class="lead">
+							Another featurette? Of course. More placeholder content here to give you
+							an idea of how this layout would work with some actual real-world
+							content in place.
+						</p>
+					</div>
+					<div class="col-md-5 order-md-1">
+						<svg
+							class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+							width="500"
+							height="500"
+							xmlns="http://www.w3.org/2000/svg"
+							role="img"
+							aria-label="Placeholder: 500x500"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false"
+						>
+							<title>Placeholder</title>
+							<rect width="100%" height="100%" fill="#eee" />
+							<text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+						</svg>
+					</div>
+				</div>
+
+				<hr class="featurette-divider" />
+
+				<div class="row featurette">
+					<div class="col-md-7">
+						<h2 class="featurette-heading">
+							And lastly, this one. <span class="text-muted">Checkmate.</span>
+						</h2>
+						<p class="lead">
+							And yes, this is the last block of representative placeholder content.
+							Again, not really intended to be actually read, simply here to give you
+							a better view of what this would look like with some actual content.
+							Your content.
+						</p>
+					</div>
+					<div class="col-md-5">
+						<svg
+							class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+							width="500"
+							height="500"
+							xmlns="http://www.w3.org/2000/svg"
+							role="img"
+							aria-label="Placeholder: 500x500"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false"
+						>
+							<title>Placeholder</title>
+							<rect width="100%" height="100%" fill="#eee" />
+							<text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+						</svg>
+					</div>
+				</div>
+
+				<hr class="featurette-divider" />
+
+				<!-- /END THE FEATURETTES -->
+			</div>
+			<!-- /.container -->
+
+			<section class="page-section" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                 <div class="col-lg-8 text-center pb-5">
+                        <h2 class="mt-0 display-3">상담</h2>
+                        <hr class="divider my-4 text-info">
+                        <p class="text-muted mb-5" style="font-size:1.8rem;">다음 프로젝트를 시작할 준비가 되셨습니까? <br>저희에게 전화를 주시거나 이메일을 보내주시면 최대한 빨리 연락드리겠습니다!</p>
+                    </div>
+					<div class="row pb-5">
+						
+					
+					<div class="col-6">
+						
+						<svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="currentColor" class="bi bi-telephone col-7" viewBox="0 0 16 16" id="call" style="font-size:5rem;">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg>
+	010-2955-8898
+		</div>
+				<div class="col-6">
+							<svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="currentColor" class="bi bi-envelope col-3" viewBox="0 0 16 16" id="email">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+</svg>
+					isangmin516@gmail.com
+					</div>
+			
+					
+                    </div>
+                </div>
+            </div>
+        </section>
+           
+			
+			
+			<!-- FOOTER -->
+			<!-- <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer> -->
+			<!-- Footer -->
+			<footer class="bg-white text-center text-lg-start">
+				<!-- Grid container -->
+				<div class="container p-4">
+					<!--Grid row-->
+					<div class="row">
+						<!--Grid column-->
+						<div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+							<h2 class="text-uppercase">회사 정보</h2>
+							<p>
+								회사명|수왕간판<br />
+								대표자명|밥버거<br />
+								사업자 등록번호|010-2955-8898<br />
+								tel|010-2955-8898<br />
+								e-mail|bab.gmail.com<br />
+								주소|i don't know 국현씨~<br />
+							</p>
+						</div>
+						<!--Grid column-->
+
+						<!--Grid column-->
+						<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+							<h2 class="text-uppercase">고객센터</h2>
+							<div id="customer-center">010-2955-8898</div>
+							평일 | 08AM ~ 18PM<br />
+							주말 | 10AM ~ 18PM<br />
+							공휴일 휴무
+						</div>
+						<!--Grid column-->
+
+						<!--Grid column-->
+						<div class="col-lg-4 col-md-6 mb-4 mb-md-0" id="sitemap_div">
+							<h5 class="text-uppercase" id="sitemap_title">사이트맵</h5>
+
+							<ul class="">
+								<li>
+									<a href="#!" class="text-dark">대표인삿말</a>
+								</li>
+								<li>
+									<a href="#!" class="text-dark">과정</a>
+								</li>
+								<li>
+									<a href="#!" class="text-dark">직원</a>
+								</li>
+								<li>
+									<a href="#!" class="text-dark">간판</a>
+								</li>
+								<li>
+									<a href="#!" class="text-dark">상담</a>
+								</li>
+								<li>
+									<a href="#!" class="text-dark">오시는길</a>
+								</li>
+							</ul>
+						</div>
+						<!--Grid column-->
+					</div>
+					<!--Grid row-->
+				</div>
+				<!-- Grid container -->
+
+				<!-- Copyright -->
+				<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+					© 2020 Copyright:
+					<a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+				</div>
+				<!-- Copyright -->
+			</footer>
+			<!-- Footer -->
+		</main>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+			crossorigin="anonymous"
+		></script>
+		<script src="JavaScript/script.js"></script>
+	</body>
 </html>
+
+<!-- Copyright (c) 2021 by betul (https://codepen.io/bsngr/pen/Ifvbi)
+Fork of an original work Bootstrap Timeline (https://codepen.io/jasondavis/pen/fDGdK
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
