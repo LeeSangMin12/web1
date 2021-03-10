@@ -51,6 +51,7 @@
 	</head>
 
 	<body>
+		
 		<header>
 			<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 				<div class="container-fluid">
@@ -69,9 +70,6 @@
 
 					<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 						<ul class="navbar-nav me-auto mb-2 mb-md-0">
-							<!-- <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li> -->
 							<li class="nav-item dropdown">
 								<a
 									class="nav-link dropdown-toggle active"
@@ -81,10 +79,9 @@
 									aria-expanded="false"
 									>회사소개</a
 								>
-								<ul class="dropdown-menu" aria-labelledby="dropdown01">
-									<li><a class="dropdown-item" href="#">대표인삿말</a></li>
-									<li><a class="dropdown-item" href="#">과정</a></li>
-									<li><a class="dropdown-item" href="#">직원</a></li>
+								<ul class="dropdown-menu bg-dark" aria-labelledby="dropdown01">
+									<li><a class="dropdown-item text-info" href="#">대표인삿말</a></li>
+									<li><a class="dropdown-item text-info" href="#">과정</a></li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown">
@@ -96,8 +93,9 @@
 									aria-expanded="false"
 									>간판</a
 								>
-								<ul class="dropdown-menu" aria-labelledby="dropdown01">
-									<li><a class="dropdown-item" href="#">간판</a></li>
+								<ul class="dropdown-menu bg-dark" aria-labelledby="dropdown01">
+									<li><a class="dropdown-item text-info" href="#">제품소개</a></li>
+									<li><a class="dropdown-item text-info" href="#">시공모습</a></li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown">
@@ -109,13 +107,15 @@
 									aria-expanded="false"
 									>문의</a
 								>
-								<ul class="dropdown-menu" aria-labelledby="dropdown01">
-									<li><a class="dropdown-item" href="#">상담</a></li>
-									<li><a class="dropdown-item" href="#">오시는길</a></li>
+								<ul class="dropdown-menu bg-dark" aria-labelledby="dropdown01">
+									<li><a class="dropdown-item text-info" href="#">상담</a></li>
+									<li><a class="dropdown-item text-info" href="#">오시는길</a></li>
 								</ul>
 							</li>
 						</ul>
-						<span class="border border-info text-warning p-3">t.010-2955-8898</span>
+						<span class="border border-info text-warning p-3 pb-2"
+							>t.010-2955-8898</span
+						>
 					</div>
 				</div>
 			</nav>
@@ -156,7 +156,7 @@
 							preserveAspectRatio="xMidYMid slice"
 							focusable="false"
 						>
-							<rect width="100%" height="100%" fill="#777" />
+							<img src="https://images.unsplash.com/photo-1612831197310-ff5cf7a211b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="to work on a computer" width="100%" height="100%" style="object-fit: cover">
 						</svg>
 
 						<div class="container">
@@ -177,7 +177,7 @@
 							preserveAspectRatio="xMidYMid slice"
 							focusable="false"
 						>
-							<rect width="100%" height="100%" fill="#777" />
+							<img src="https://images.unsplash.com/photo-1590402494727-0375eeaacf68?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" width="100%" height="100%" style="object-fit: cover">
 						</svg>
 
 						<div class="container">
@@ -198,12 +198,12 @@
 							preserveAspectRatio="xMidYMid slice"
 							focusable="false"
 						>
-							<rect width="100%" height="100%" fill="#777" />
+							<img src="https://images.unsplash.com/photo-1538688423619-a81d3f23454b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="" width="100%" height="100%" style="object-fit: cover">
 						</svg>
 
 						<div class="container">
 							<div class="carousel-caption text-end">
-								<h1>쉬운 상담</h1>
+								<h1 class="text-dark">쉬운 상담</h1>
 								<p>언제든 쉬운 상담으로 편하게 상담하실수 있습니다.</p>
 								<p><a class="btn btn-lg btn-primary" href="#">상담</a></p>
 							</div>
@@ -233,44 +233,21 @@
 			<!-- Marketing messaging and featurettes
   ================================================== -->
 			<!-- Wrap the rest of the page in another container to center all the content. -->
-			<div class="row mb-2" id="greetings">
-				<div class="col-md-6">
-					<div
-						class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-					>
-						<div class="col p-4 d-flex flex-column position-static">
-							<strong class="d-inline-block mb-2 text-primary">World</strong>
-							<h3 class="mb-0">Featured post</h3>
-							<div class="mb-1 text-muted">Nov 12</div>
-							<p class="card-text mb-auto">
-								This is a wider card with supporting text below as a natural lead-in
-								to additional content.
-							</p>
-							<a href="#" class="stretched-link">Continue reading</a>
-						</div>
-						<div class="col-auto d-none d-lg-block">
-							<svg
-								class="bd-placeholder-img"
-								width="200"
-								height="250"
-								xmlns="http://www.w3.org/2000/svg"
-								role="img"
-								aria-label="Placeholder: Thumbnail"
-								preserveAspectRatio="xMidYMid slice"
-								focusable="false"
-							>
-								<title>Placeholder</title>
-								<rect width="100%" height="100%" fill="#55595c" />
-								<text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-							</svg>
-						</div>
-					</div>
-				</div>
-			</div>
+			<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center  bg-light">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-1 font-weight-normal pb-4">대표 인사말</h1>
+        <p class="lead font-weight-normal">당신을 위한 최고의 간판만을 제작합니다.</p>
+        <p class="lead font-weight-normal">10년넘게 열정을 담은 경력으로 최선을 다합니다.</p>
+        <p class="lead font-weight-normal  text-warning">당신의 가게가 더 돋보일수 있도록 할게요</p>
+        <!-- <a class="btn btn-outline-secondary" href="#">Coming soon</a> -->
+      </div>
+      <div class="product-device box-shadow d-none d-md-block"></div>
+      <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+    </div>
 
 			<div class="container" id="process">
-				<div class="page-header">
-					<h1 id="timeline">과정</h1>
+				<div class="page-header" id="process_title">
+					<h1 id="timeline text-center">과정</h1>
 				</div>
 				<ul class="timeline">
 					<li>
@@ -426,84 +403,6 @@
 				</ul>
 			</div>
 
-			<div class="container marketing">
-				<!-- Three columns of text below the carousel -->
-				<h2 class="display-3 text-info">직원</h2>
-				<div class="row">
-					<div class="col-lg-4">
-						<svg
-							class="bd-placeholder-img rounded-circle"
-							width="140"
-							height="140"
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							aria-label="Placeholder: 140x140"
-							preserveAspectRatio="xMidYMid slice"
-							focusable="false"
-						>
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#777" />
-							<text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-						</svg>
-
-						<h2>Heading</h2>
-						<p>
-							Some representative placeholder content for the three columns of text
-							below the carousel. This is the first column.
-						</p>
-						<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-					</div>
-					<!-- /.col-lg-4 -->
-					<div class="col-lg-4">
-						<svg
-							class="bd-placeholder-img rounded-circle"
-							width="140"
-							height="140"
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							aria-label="Placeholder: 140x140"
-							preserveAspectRatio="xMidYMid slice"
-							focusable="false"
-						>
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#777" />
-							<text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-						</svg>
-
-						<h2>Heading</h2>
-						<p>
-							Another exciting bit of representative placeholder content. This time,
-							we've moved on to the second column.
-						</p>
-						<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-					</div>
-					<!-- /.col-lg-4 -->
-					<div class="col-lg-4">
-						<svg
-							class="bd-placeholder-img rounded-circle"
-							width="140"
-							height="140"
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							aria-label="Placeholder: 140x140"
-							preserveAspectRatio="xMidYMid slice"
-							focusable="false"
-						>
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#777" />
-							<text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-						</svg>
-
-						<h2>Heading</h2>
-						<p>
-							And lastly this, the third column of representative placeholder content.
-						</p>
-						<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-					</div>
-					<!-- /.col-lg-4 -->
-				</div>
-				<!-- /.row -->
-
 				<!-- START THE FEATURETTES -->
 
 				<hr class="featurette-divider" />
@@ -608,38 +507,55 @@
 			<!-- /.container -->
 
 			<section class="page-section" id="contact">
-            <div class="container">
-                <div class="row justify-content-center">
-                 <div class="col-lg-8 text-center pb-5">
-                        <h2 class="mt-0 display-3">상담</h2>
-                        <hr class="divider my-4 text-info">
-                        <p class="text-muted mb-5" style="font-size:1.8rem;">다음 프로젝트를 시작할 준비가 되셨습니까? <br>저희에게 전화를 주시거나 이메일을 보내주시면 최대한 빨리 연락드리겠습니다!</p>
-                    </div>
-					<div class="row pb-5">
-						
-					
-					<div class="col-6">
-						
-						<svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="currentColor" class="bi bi-telephone col-7" viewBox="0 0 16 16" id="call" style="font-size:5rem;">
-  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-</svg>
-	010-2955-8898
-		</div>
-				<div class="col-6">
-							<svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="currentColor" class="bi bi-envelope col-3" viewBox="0 0 16 16" id="email">
-  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-</svg>
-					isangmin516@gmail.com
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8 text-center pb-5">
+							<h2 class="mt-0 display-3">상담</h2>
+							<hr class="divider my-4 text-info" />
+							<p class="text-muted mb-5" style="font-size: 1.8rem;">
+								다음 프로젝트를 시작할 준비가 되셨습니까? <br />저희에게 전화를
+								주시거나 이메일을 보내주시면 최대한 빨리 연락드리겠습니다!
+							</p>
+						</div>
+						<div class="row pb-5">
+							<div class="col-6">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="3rem"
+									height="3rem"
+									fill="currentColor"
+									class="bi bi-telephone col-7"
+									viewBox="0 0 16 16"
+									id="call"
+									style="font-size: 5rem;"
+								>
+									<path
+										d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+									/>
+								</svg>
+								010-2955-8898
+							</div>
+							<div class="col-6">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="3rem"
+									height="3rem"
+									fill="currentColor"
+									class="bi bi-envelope col-3"
+									viewBox="0 0 16 16"
+									id="email"
+								>
+									<path
+										d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
+									/>
+								</svg>
+								isangmin516@gmail.com
+							</div>
+						</div>
 					</div>
-			
-					
-                    </div>
-                </div>
-            </div>
-        </section>
-           
-			
-			
+				</div>
+			</section>
+
 			<!-- FOOTER -->
 			<!-- <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
@@ -687,10 +603,10 @@
 									<a href="#!" class="text-dark">과정</a>
 								</li>
 								<li>
-									<a href="#!" class="text-dark">직원</a>
+									<a href="#!" class="text-dark">제품소개</a>
 								</li>
 								<li>
-									<a href="#!" class="text-dark">간판</a>
+									<a href="#!" class="text-dark">시공모습</a>
 								</li>
 								<li>
 									<a href="#!" class="text-dark">상담</a>
@@ -733,3 +649,5 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+			
+
