@@ -2,13 +2,23 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" />
 		<meta name="description" content="" />
 		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
 		<meta name="generator" content="Hugo 0.80.0" />
 		<title>수왕간판</title>
 
 		<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/" />
+		
+		<!-- splide css -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-default.min.css"
+			rel="stylesheet"
+		/>
 
 		<!-- Bootstrap core CSS -->
 		<link
@@ -80,8 +90,8 @@
 									>회사소개</a
 								>
 								<ul class="dropdown-menu bg-dark" aria-labelledby="dropdown01">
-									<li><a class="dropdown-item text-info" href="#">대표인삿말</a></li>
-									<li><a class="dropdown-item text-info" href="#">과정</a></li>
+									<li><a class="dropdown-item text-info" href="#greetings">대표인삿말</a></li>
+									<li><a class="dropdown-item text-info" href="#process">과정</a></li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown">
@@ -94,8 +104,7 @@
 									>간판</a
 								>
 								<ul class="dropdown-menu bg-dark" aria-labelledby="dropdown01">
-									<li><a class="dropdown-item text-info" href="#">제품소개</a></li>
-									<li><a class="dropdown-item text-info" href="#">시공모습</a></li>
+									<li><a class="dropdown-item text-info" href="#product_description">제품소개</a></li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown">
@@ -108,8 +117,8 @@
 									>문의</a
 								>
 								<ul class="dropdown-menu bg-dark" aria-labelledby="dropdown01">
-									<li><a class="dropdown-item text-info" href="#">상담</a></li>
-									<li><a class="dropdown-item text-info" href="#">오시는길</a></li>
+									<li><a class="dropdown-item text-info" href="#contact">상담</a></li>
+									<li><a class="dropdown-item text-info" href="#directions">오시는길</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -163,7 +172,7 @@
 							<div class="carousel-caption text-start">
 								<h1>간판 제작</h1>
 								<p>최신 기술 기반으로 최선을 다해 만듭니다.</p>
-								<p><a class="btn btn-lg btn-primary" href="#">대표인삿말</a></p>
+								<p><a class="btn btn-lg btn-primary" href="#greetings">대표인사말</a></p>
 							</div>
 						</div>
 					</div>
@@ -184,7 +193,7 @@
 							<div class="carousel-caption">
 								<h1>간판</h1>
 								<p>다른 간판회사와 다르게 매력적인 간판</p>
-								<p><a class="btn btn-lg btn-primary" href="#">간판</a></p>
+								<p><a class="btn btn-lg btn-primary" href="#product_description">간판</a></p>
 							</div>
 						</div>
 					</div>
@@ -205,7 +214,7 @@
 							<div class="carousel-caption text-end">
 								<h1 class="text-dark">쉬운 상담</h1>
 								<p>언제든 쉬운 상담으로 편하게 상담하실수 있습니다.</p>
-								<p><a class="btn btn-lg btn-primary" href="#">상담</a></p>
+								<p><a class="btn btn-lg btn-primary" href="#directions">상담</a></p>
 							</div>
 						</div>
 					</div>
@@ -233,9 +242,9 @@
 			<!-- Marketing messaging and featurettes
   ================================================== -->
 			<!-- Wrap the rest of the page in another container to center all the content. -->
-			<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center  bg-light">
+			<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center  bg-light" id="greetings">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-1 font-weight-normal pb-4">대표 인사말</h1>
+        <h1 class=" font-weight-normal pb-4">대표 인사말</h1>
         <p class="lead font-weight-normal">당신을 위한 최고의 간판만을 제작합니다.</p>
         <p class="lead font-weight-normal">10년넘게 열정을 담은 경력으로 최선을 다합니다.</p>
         <p class="lead font-weight-normal  text-warning">당신의 가게가 더 돋보일수 있도록 할게요</p>
@@ -245,9 +254,9 @@
       <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
     </div>
 
-			<div class="container" id="process">
+			<div class="container mt-5" id="process">
 				<div class="page-header" id="process_title">
-					<h1 id="timeline text-center">과정</h1>
+					<h1 id="timeline text-center" >과정</h1>
 				</div>
 				<ul class="timeline">
 					<li>
@@ -402,115 +411,64 @@
 					</li>
 				</ul>
 			</div>
-
-				<!-- START THE FEATURETTES -->
-
-				<hr class="featurette-divider" />
-
-				<div class="row featurette">
-					<div class="col-md-7">
-						<h2 class="featurette-heading">
-							First featurette heading.
-							<span class="text-muted">It’ll blow your mind.</span>
-						</h2>
-						<p class="lead">
-							Some great placeholder content for the first featurette here. Imagine
-							some exciting prose here.
-						</p>
-					</div>
-					<div class="col-md-5">
-						<svg
-							class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-							width="500"
-							height="500"
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							aria-label="Placeholder: 500x500"
-							preserveAspectRatio="xMidYMid slice"
-							focusable="false"
-						>
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#eee" />
-							<text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-						</svg>
-					</div>
-				</div>
-
-				<hr class="featurette-divider" />
-
-				<div class="row featurette">
-					<div class="col-md-7 order-md-2">
-						<h2 class="featurette-heading">
-							Oh yeah, it’s that good.
-							<span class="text-muted">See for yourself.</span>
-						</h2>
-						<p class="lead">
-							Another featurette? Of course. More placeholder content here to give you
-							an idea of how this layout would work with some actual real-world
-							content in place.
-						</p>
-					</div>
-					<div class="col-md-5 order-md-1">
-						<svg
-							class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-							width="500"
-							height="500"
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							aria-label="Placeholder: 500x500"
-							preserveAspectRatio="xMidYMid slice"
-							focusable="false"
-						>
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#eee" />
-							<text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-						</svg>
-					</div>
-				</div>
-
-				<hr class="featurette-divider" />
-
-				<div class="row featurette">
-					<div class="col-md-7">
-						<h2 class="featurette-heading">
-							And lastly, this one. <span class="text-muted">Checkmate.</span>
-						</h2>
-						<p class="lead">
-							And yes, this is the last block of representative placeholder content.
-							Again, not really intended to be actually read, simply here to give you
-							a better view of what this would look like with some actual content.
-							Your content.
-						</p>
-					</div>
-					<div class="col-md-5">
-						<svg
-							class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-							width="500"
-							height="500"
-							xmlns="http://www.w3.org/2000/svg"
-							role="img"
-							aria-label="Placeholder: 500x500"
-							preserveAspectRatio="xMidYMid slice"
-							focusable="false"
-						>
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#eee" />
-							<text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-						</svg>
-					</div>
-				</div>
-
-				<hr class="featurette-divider" />
-
-				<!-- /END THE FEATURETTES -->
+    
+			
+			<div class="container" id="product_description">
+				<h1 class="text-center pb-5">제품소개</h1>
+				
+				
+					
+				<div id="primary-slider" class="splide">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<img
+							src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+						/>
+					</li>
+					<li class="splide__slide">
+						<img
+							src="https://images.unsplash.com/photo-1615385164509-79243b513da2?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+						/>
+					</li>
+					<li class="splide__slide">
+						<img
+							src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+						/>
+					</li>
+				</ul>
 			</div>
-			<!-- /.container -->
+		</div>
+		<div id="secondary-slider" class="splide">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<img
+							src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+						/>
+					</li>
+					<li class="splide__slide">
+						<img
+							src="https://images.unsplash.com/photo-1615385164509-79243b513da2?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+						/>
+					</li>
+					<li class="splide__slide">
+						<img
+							src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+						/>
+					</li>
+				</ul>
+  </div>
 
-			<section class="page-section" id="contact">
+					
+				</div>
+			</div>
+
+			<section class="page-section pt-5" id="contact">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-lg-8 text-center pb-5">
-							<h2 class="mt-0 display-3">상담</h2>
+							<h2 class="mt-0 ">상담</h2>
 							<hr class="divider my-4 text-info" />
 							<p class="text-muted mb-5" style="font-size: 1.8rem;">
 								다음 프로젝트를 시작할 준비가 되셨습니까? <br />저희에게 전화를
@@ -525,9 +483,9 @@
 									height="3rem"
 									fill="currentColor"
 									class="bi bi-telephone col-7"
-									viewBox="0 0 16 16"
+									viewBox="-30 0 16 16"
 									id="call"
-									style="font-size: 5rem;"
+									style="font-size: 5rem; "
 								>
 									<path
 										d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
@@ -546,7 +504,7 @@
 									id="email"
 								>
 									<path
-										d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
+										d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" 
 									/>
 								</svg>
 								isangmin516@gmail.com
@@ -555,6 +513,14 @@
 					</div>
 				</div>
 			</section>
+			
+			<div class="container" id="directions">
+				<h1 class="text-center mt-5">오시는 길</h1>
+					
+				<p class="h5">
+					주소:서울특별시 성동구 성수이로18길 7, HS빌딩 7층
+				</p>
+			</div>
 
 			<!-- FOOTER -->
 			<!-- <footer class="container">
@@ -562,7 +528,7 @@
     <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer> -->
 			<!-- Footer -->
-			<footer class="bg-white text-center text-lg-start">
+			<footer class="bg-white text-center text-lg-start ">
 				<!-- Grid container -->
 				<div class="container p-4">
 					<!--Grid row-->
@@ -597,22 +563,19 @@
 
 							<ul class="">
 								<li>
-									<a href="#!" class="text-dark">대표인삿말</a>
+									<a href="#greetings" class="text-dark">대표인삿말</a>
 								</li>
 								<li>
-									<a href="#!" class="text-dark">과정</a>
+									<a href="#process" class="text-dark">과정</a>
 								</li>
 								<li>
-									<a href="#!" class="text-dark">제품소개</a>
+									<a href="#product_description" class="text-dark">제품소개</a>
 								</li>
 								<li>
-									<a href="#!" class="text-dark">시공모습</a>
+									<a href="#contact" class="text-dark">상담</a>
 								</li>
 								<li>
-									<a href="#!" class="text-dark">상담</a>
-								</li>
-								<li>
-									<a href="#!" class="text-dark">오시는길</a>
+									<a href="#directions" class="text-dark">오시는길</a>
 								</li>
 							</ul>
 						</div>
@@ -631,12 +594,15 @@
 			</footer>
 			<!-- Footer -->
 		</main>
-
+		
+		<!-- bootstrap -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 			crossorigin="anonymous"
 		></script>
+		<!-- splide -->
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
 		<script src="JavaScript/script.js"></script>
 	</body>
 </html>
@@ -651,3 +617,10 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
 			
 
+  
+
+		
+					
+				
+
+		

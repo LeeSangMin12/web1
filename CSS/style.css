@@ -12,7 +12,7 @@
         }
       }
 
-
+/* timeline */
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
@@ -160,7 +160,8 @@
 .timeline-body > p + p {
   margin-top: 5px;
 }
-/* timeline */
+
+
 
 /* Header */
 #dropdown01{
@@ -199,13 +200,34 @@
   background-color: #e5e5e5;
 }
 
+#greetings{
+	 display: flex;
+  justify-content: center;
+}
+
 /* process */
 #process{
 	padding-bottom:5rem;
 }
+#timeline\ text-center{
+	
+	
+	padding-bottom:3rem;
+}
 #process_title{
 	text-align:center;
-	font-size:10% !important; 
+}
+
+
+/* slide image */
+
+
+
+
+
+/* Footer*/
+#customer-center{
+	font-size:3rem;
 }
 
 #sitemap_title{
@@ -215,15 +237,10 @@
 	padding-left:8rem;
 }
 	
-#greetings{
-	 display: flex;
-  justify-content: center;
-}
 
 
-/* Footer*/
-#customer-center{
-	font-size:3rem;
-}
+
+
+
 
 
