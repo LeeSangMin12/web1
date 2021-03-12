@@ -1,4 +1,8 @@
- .bd-placeholder-img {
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+} 
+
+.bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
@@ -165,41 +169,13 @@
 
 /* Header */
 #dropdown01{
-	padding-left:3rem;
+	padding-left:4rem;
 }
 
 /* Representative greeting */
- .product-device {
-  position: absolute;
-  right: 10%;
-  bottom: -30%;
-  width: 300px;
-  height: 540px;
-  background-color: #333;
-  border-radius: 21px;
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
-}
 
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 5px;
-}
 
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: #e5e5e5;
-}
-
+ 
 #greetings{
 	 display: flex;
   justify-content: center;
@@ -219,7 +195,14 @@
 }
 
 
-/* slide image */
+/* councelling */
+
+/* #telephone_num{
+	position:relative;
+	left:16rem;
+	top:-3rem;
+}
+ */
 
 
 
