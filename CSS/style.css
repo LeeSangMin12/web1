@@ -40,6 +40,9 @@ background-color:rgb(220,220,220);
 }
 
 /* product introduction */
+#product_description > div{
+	border-radius:2rem;
+}
 #product_description > div > div > div > div:nth-child(n+0):nth-child(-n+7)
  > div{
 	background-color: rgba(255,255,255,0.09);
@@ -75,6 +78,8 @@ background-color:rgb(220,220,220);
 #footer{
 	background-color:rgba(0, 0, 0, 0.2) !important;
 }
+
+
 
 
 
