@@ -1,19 +1,14 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
 
 body > header > nav > div > div.navbar_logo > img{
-	width: 4.3em;
-  height: 4.3rem;
-  object-fit: fill;
-	margin-right:2rem;
+	width: 9.5rem;
+  height: 3.5rem;
+  object-fit:cover ;
 }
 
-body{
-	font-family: 'Source Sans Pro', sans-serif ;
-} 
 
 #product_description > div{
-	background-image: url(../example/간판+이미지/bg.jpg);
-	background-size:cover;
+	background-image: url( "../간판+이미지/bg.jpg" );
 }
 
 
@@ -84,7 +79,7 @@ background-color:rgb(220,220,220);
 #sitemap_div{
 	padding-left:8rem;
 }
-	
+
 #footer{
 	background-color:rgba(0, 0, 0, 0.2) !important;
 }
@@ -93,7 +88,7 @@ background-color:rgb(220,220,220);
 
 body > main > div:nth-child(4) > div:nth-child(1) > div.col-md-5 > img{
 	width:30rem;
-	height:20rem;	
+	height:20rem;
 }
 
 body > main > div:nth-child(4) > div:nth-child(3) > div.col-md-5.order-md-1 > img {
@@ -106,5 +101,13 @@ body > main > div:nth-child(4) > div:nth-child(5) > div.col-md-5 > img{
 	height:20rem;
 }
 
+#product_description > div > div > div > div:nth-child(1) > div > a > img{
+	height:19rem;
+}
+#product_description > div > div > div > div:nth-child(3) > div > a > img{
+	height:19rem !important;
+}
+#product_description > div > div > div > div:nth-child(n+0){
+	margin-bottom:2rem; ;
 
-	
+}

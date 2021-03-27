@@ -8,7 +8,7 @@
 /*  border:5px solid blue;*/
 }
 body{
-  background-image: url(../../example/간판+이미지/bg.jpg);
+  background-image: url("../../간판+이미지/bg.jpg");
   background-size:cover;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -34,9 +34,10 @@ body{
   display:block;
 }
 #header > span > img{
-	width:9rem;
-  height:6rem;
-	object-fit: cover;
+	width:18rem;
+  height:7.3rem;
+	object-fit: scale-down;
+  padding:1rem;
 }
 #header h1{
   font-size:1.8rem;
@@ -45,6 +46,7 @@ body{
   margin-bottom: 1.5rem;
   line-height: 2.3rem;
 }
+
 #header h1 strong{
   color:white;
   font-weight: 200;
