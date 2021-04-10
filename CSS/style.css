@@ -6,6 +6,7 @@ body > header > nav > div > div.navbar_logo > img{
   object-fit:cover ;
 }
 
+#sitemap_div
 
 #product_description > div{
 	background-image: url( "../간판+이미지/bg.jpg" );
@@ -77,8 +78,13 @@ background-color:rgb(220,220,220);
 	font-size:2rem;
 }
 #sitemap_div{
-	padding-left:8rem;
+	padding-left:2rem ;
 }
+
+@media(min-width: 720px) {
+  #sitemap_div {
+    padding-left:6rem;
+  }
 
 #footer{
 	background-color:rgba(0, 0, 0, 0.2) !important;
