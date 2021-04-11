@@ -1,16 +1,20 @@
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
-
+body{
+	  font-family: 'Source Sans Pro', sans-serif;
+}
 body > header > nav > div > div.navbar_logo > img{
 	width: 9.5rem;
   height: 3.5rem;
   object-fit:cover ;
 }
+body > header > nav{
+	background-color:#263343;
+}
 
-#sitemap_div
-
-#product_description > div{
+/* #product_description > div{
 	background-image: url( "../간판+이미지/bg.jpg" );
 }
+ */
+
 
 
 .bd-placeholder-img {
@@ -29,6 +33,9 @@ body > header > nav > div > div.navbar_logo > img{
 
 
 /* Header */
+header nav{
+	background-color:#263343;
+}
 #dropdown01{
 	padding-left:4rem;
 }
@@ -46,6 +53,7 @@ background-color:rgb(220,220,220);
 }
 
 /* product introduction */
+
 #product_description > div{
 	border-radius:2rem;
 }
@@ -59,36 +67,41 @@ background-color:rgb(220,220,220);
 #product_description > div > div > div > div:nth-child(7){
 	margin:0 auto;
 }
+ #primary-slider-track{
+			   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-top:8rem;
+  padding-bottom:2rem;
+		  }
 
 /* consulting */
-
+#contact > div > div{
+	margin-top:5rem;
+}
 #icon{
 	text-align:center;
 	font-size:2rem;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-weight: 300;
 }
-
 /* Footer*/
+#footer{
+	background-color:rgba(0, 0, 0, 0.2) !important;
+}
 #customer-center{
 	font-size:3rem;
 }
-
 #sitemap_title{
 	font-size:2rem;
 }
-#sitemap_div{
-	padding-left:2rem ;
-}
+
 
 @media(min-width: 720px) {
   #sitemap_div {
     padding-left:6rem;
   }
-
-#footer{
-	background-color:rgba(0, 0, 0, 0.2) !important;
-}
 
 
 

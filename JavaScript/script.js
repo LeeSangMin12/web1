@@ -1,3 +1,32 @@
+// Create and mount the thumbnails slider.
+var secondarySlider = new Splide( 'main #secondary-slider', {
+	rewind      : true,
+	fixedWidth  : 100,
+	fixedHeight : 64,
+	isNavigation: true,
+	gap         : 10,
+	focus       : 'center',
+	pagination  : false,
+	cover       : true,
+	breakpoints : {
+		'600': {
+			fixedWidth  : 66,
+			fixedHeight : 40,
+		}
+	}
+} ).mount();
+
+// Create the main slider.
+var primarySlider = new Splide( 'main #primary-slider', {
+	type       : 'fade',
+	heightRatio: 0.5,
+	pagination : false,
+	arrows     : false,
+	cover      : true,
+} );
+// Set the thumbnails slider as a sync target and then call mount.
+primarySlider.sync( secondarySlider ).mount();
+
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	    mapOption = {
 	        center: new kakao.maps.LatLng(35.23075, 129.15289), // 지도의 중심좌표
@@ -27,3 +56,5 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	});
 	// 인포윈도우를 지도에 표시한다
 	infowindow.open(map, marker);
+
+
