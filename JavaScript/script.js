@@ -1,8 +1,8 @@
 // Create and mount the thumbnails slider.
-var secondarySlider = new Splide( 'main #secondary-slider', {
+var secondarySlider = new Splide( '#secondary-slider', {
 	rewind      : true,
 	fixedWidth  : 100,
-	fixedHeight : 64,
+	fixedHeight : 80,
 	isNavigation: true,
 	gap         : 10,
 	focus       : 'center',
@@ -17,7 +17,7 @@ var secondarySlider = new Splide( 'main #secondary-slider', {
 } ).mount();
 
 // Create the main slider.
-var primarySlider = new Splide( 'main #primary-slider', {
+var primarySlider = new Splide( '#primary-slider', {
 	type       : 'fade',
 	heightRatio: 0.5,
 	pagination : false,
@@ -26,6 +26,10 @@ var primarySlider = new Splide( 'main #primary-slider', {
 } );
 // Set the thumbnails slider as a sync target and then call mount.
 primarySlider.sync( secondarySlider ).mount();
+
+			
+			
+
 
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	    mapOption = {
