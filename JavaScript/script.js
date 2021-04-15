@@ -1,3 +1,14 @@
+//var lis = document.getElementById("primary-slider").getElementsByTagName("li");
+function fetchPage(name){
+    fetch(name).then(function(response){
+      response.text().then(function(text){
+        document.querySelector('article').innerHTML = text;
+      })
+    });
+  }
+
+
+
 // Create and mount the thumbnails slider.
 var secondarySlider = new Splide( '#secondary-slider', {
 	rewind      : true,
@@ -60,5 +71,8 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	});
 	// 인포윈도우를 지도에 표시한다
 	infowindow.open(map, marker);
+
+
+s
 
 
