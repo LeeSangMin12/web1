@@ -72,7 +72,3 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 	// 인포윈도우를 지도에 표시한다
 	infowindow.open(map, marker);
 
-
-s
-
-
